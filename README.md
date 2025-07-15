@@ -3,6 +3,8 @@ By Anarchist-Society
 Configuración de Vim
 
 La estructura de directorios es la siguiente:
+
+<br>
 .vim/
 ├── autoload/                	Para plug.vim (gestor de plugins)
 ├── backup/                  	Archivos de respaldo
@@ -15,6 +17,7 @@ La estructura de directorios es la siguiente:
     ├── plugins.vim          	Declaración de plugins
     ├── plugins-settings.vim  	Configuración de plugins
     └── settings.vim         	Configuraciones generales de Vim
+<br>
 
 Creamos la estructura de directorios
 mkdir -p ~/.vim/{autoload,backup,colors,plugged,config}
