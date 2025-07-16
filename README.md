@@ -10,19 +10,26 @@ La estructura de directorios es la siguiente:
 ├── backup/              	Archivos de respaldo
 ├── colors/               	Colores personalizados
 ├── plugged/             	Carpeta donde vim-plug instala plugins
-└── config/              	Configuraciones separadas por temática
+└── config/              	Configuraciones
     ├── appearance.vim     	Apariencia e interfaz
     ├── autocmd.vim          	Autocomandos
     ├── keymaps.vim     	Atajos de teclado
     ├── plugins.vim        	Declaración de plugins
     ├── plugins-settings.vim  	Configuración de plugins
     └── settings.vim         	Configuraciones generales de Vim
+```
 
 Creamos la estructura de directorios
+
+```zsh
 mkdir -p ~/.vim/{autoload,backup,colors,plugged,config}
+```
 
 Creamos la estructura de configuración
+
+```zsh
 touch ~/.vim/config/{appearance.vim,autocmds.vim,keymaps.vim,plugins.vim,plugins-settings.vim,settings.vim}
+```
 
 Instalamos vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
