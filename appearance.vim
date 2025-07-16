@@ -2,19 +2,20 @@
 " CONFIGURACIÓN DE APARIENCIA Y ESTILO
 " ====================================
 
-syntax on               " Activamos el resaltado de sintaxis
-set number              " Mostramos los números de las líneas
-set relativenumber      " Muesramos los números de las líneas de forma relativa
-set background=dark     " Optimizamos los colores para fondos oscuros
-set scrolloff=10        " Dejamos 10 líneas de margen al desplazar (ir hacia arriba o hacia abajo)
-set ruler               " Mostramos la posición del cursor (línea y columna) en la barra de estado
-set cmdheight=1         " Establecemos la altura de la barra de comandos
-set hidden              " Los búffers ocultos no se cierran cuando se cambian
-set textwidth=0      	" Establecemos el límite de caracteres por línea
-set nowrap              " Desactivamos el ajuste de líneas, ahora no se podrán dividir las líneas largas
+syntax on               " Activa el resaltado de sintaxis
+set termguicolors       " Habilita soporte para colores de 24 bits
+set number              " Muestra los números de las líneas
+set relativenumber      " Muestra los números de las líneas de forma relativa
+set background=dark     " Optimiza los colores para fondos oscuros
+set scrolloff=10        " Deja 10 líneas de margen al desplazarse (ir hacia arriba o hacia abajo)
+set ruler               " Muestra la posición del cursor (línea y columna) en la barra de estado
+set hidden              " Mantiene los búferes abiertos al cambiar de fichero
+set nowrap              " Desactiva el ajuste de líneas, ahora no se podrán dividir las líneas largas
 
 " Ajustes que quitamos
-" set linebreak         " Permitimos cortar la línea en lugares adecuado (se necesita que wrap esté activado)
-" set cursorline        " Resaltamos línea del cursor
-" set cursorcolumn      " Resaltamos columna del cursor
+" set linebreak         " Corta líneas en lugares adecuados (requiere que 'wrap esté activado')
+" set cursorline        " Resalta la línea del cursor
+" set cursorcolumn      " Resalta la columna del cursor
 " set colorcolumn=80    " Resalta la columna 80
+" set cmdheight=1       " Establece la altura de la barra de comandos (omitido, es el valor por defecto)
+" set textwidth=0       " Establece el límite de caracteres por línea (omitido por redundante)

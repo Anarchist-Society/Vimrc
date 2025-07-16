@@ -4,20 +4,19 @@ Configuración de Vim
 
 La estructura de directorios es la siguiente:
 
-<br>
+```text
 .vim/
-├── autoload/                	Para plug.vim (gestor de plugins)
-├── backup/                  	Archivos de respaldo
-├── colors/                  	Colores personalizados
-├── plugged/                 	Carpeta donde vim-plug instala plugins
-└── config/                  	Configuraciones separadas por temática
-    ├── appearance.vim       	Apariencia e interfaz
+├── autoload/  			Para plug.vim (gestor de plugins)
+├── backup/              	Archivos de respaldo
+├── colors/               	Colores personalizados
+├── plugged/             	Carpeta donde vim-plug instala plugins
+└── config/              	Configuraciones separadas por temática
+    ├── appearance.vim     	Apariencia e interfaz
     ├── autocmd.vim          	Autocomandos
-    ├── keymaps.vim          	Atajos de teclado
-    ├── plugins.vim          	Declaración de plugins
+    ├── keymaps.vim     	Atajos de teclado
+    ├── plugins.vim        	Declaración de plugins
     ├── plugins-settings.vim  	Configuración de plugins
     └── settings.vim         	Configuraciones generales de Vim
-<br>
 
 Creamos la estructura de directorios
 mkdir -p ~/.vim/{autoload,backup,colors,plugged,config}
