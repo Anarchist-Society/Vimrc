@@ -1,4 +1,3 @@
-" ========================
 " CONFIGURACIÓN DE PLUGINS
 " ========================
 
@@ -45,14 +44,14 @@ let NERDTreeIgnore=['\.git$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', 
 
 " => Configuración de indentLine
 " let g:indentLine_defaultGroup = 'SpecialKey'
-" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 " let g:indentLine_char = 'c'
 " let g:indentLine_char = '¦'
 " let g:indentLine_char = '┆'
-" let g:indentLine_char = '│'
 " let g:indentLine_char = '⎸'
 " let g:indentLine_char = '▏'
 " let g:indentLine_setColors = 0
+" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_char = '│'
 
 " " => Configuración de vim-closetag
 " let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.xml' " Habilitar plugin en estos ficheros
