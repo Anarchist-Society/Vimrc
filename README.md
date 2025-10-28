@@ -3,7 +3,7 @@ Acompañame en mi propia configuración de Vimrc a través de tutoriales en inte
 
 Para esta primera versión voy a seguir los pasos que me ofrece freeCodeCamp.
 Aquí el link:
--[link de vimrc (freeCodeCamp)] (https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/)
+[link de vimrc (freeCodeCamp)] (https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/)
 
 Para empezar crearemos la siguiente estructura de directorios:
 ```
