@@ -28,3 +28,12 @@ Para añadir plugin: yo voy a usar el gestor de plugins vim-plug y para ello voy
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+
+Lista de plugins que uso:
+[coc.nvim](https://github.com/neoclide/coc.nvim)
+
+Uso de vim-plug:
+:PlugInstall to install the plugins
+:PlugUpdate to install or update the plugins
+:PlugDiff to review the changes from the last update
+:PlugClean to remove plugins no longer in the list
