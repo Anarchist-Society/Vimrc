@@ -14,10 +14,11 @@ Para empezar crearemos la siguiente estructura de directorios:
  └── plugged/
 ```
 
-```bash
+```zsh
 mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
 ```
 
+Creamos el fichero .vimrc
 ```zsh
-mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
+touch ~/.vimrc
 ```
