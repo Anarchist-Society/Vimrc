@@ -22,3 +22,9 @@ Creamos el fichero .vimrc
 ```zsh
 touch ~/.vimrc
 ```
+
+Para añadir plugin: yo voy a usar el gestor de plugins vim-plug y para ello voy a proceder con la instalación:
+```zsh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
