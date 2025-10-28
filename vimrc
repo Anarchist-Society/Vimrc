@@ -74,3 +74,11 @@ set history=1000 " Historial de 1000 comandos
 " set wildmenu " Activa el menú de autocompletado (default)
 " set wildmode=list:longest,full  " Autocompletado tipo Bash
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*flv,*.img,*.xlsx,*.o
+
+" ====================================
+" PLUGINS
+" ====================================
+call plug#begin()
+     " Use release branch (recommended)
+     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
