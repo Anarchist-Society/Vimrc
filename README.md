@@ -30,7 +30,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ```
 
 Lista de plugins que uso:
+Antes de instalar este plugin tienes que configurar previamente npm y nodejs y tener java instalado
 [coc.nvim](https://github.com/neoclide/coc.nvim)
+:CocInstall coc-java
 
 Uso de vim-plug:
 :PlugInstall to install the plugins
