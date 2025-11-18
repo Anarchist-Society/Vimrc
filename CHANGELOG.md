@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [1.1.0] - 2025-11-18
+### Added
+- Plugins:
+  - ALE (Asynchronous Lint Engine) for linting
+  - NERDTree for file navigation
+  - CoC.nvim (release branch) for autocompletion
+  - vim-startify for a startup screen
+  - vim-live-server for live reload development
+
 ## [1.0.0] - 2025-11-18
 ### Added
 - Basic Vim settings (filetype, autoread)
