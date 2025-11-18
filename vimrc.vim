@@ -78,7 +78,7 @@ nnoremap <C-LEFT> <C-w>>
 nnoremap <C-RIGHT> <C-w><
 
 " Plugin shortcuts
-nnoremap <C-n> :ERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 " VIMSCRIPT
 if version >= 703
