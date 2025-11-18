@@ -70,9 +70,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-nnoremap <C-UP> <C-w>+
 
 " Window resizing
+nnoremap <C-UP> <C-w>+
 nnoremap <C-DOWN> <C-w>-
 nnoremap <C-LEFT> <C-w>>
 nnoremap <C-RIGHT> <C-w><
