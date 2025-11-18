@@ -32,9 +32,7 @@ touch ~/.vimrc
 ```
 
 ## Plugins para vim
-Para añadir plugin: yo voy a usar el gestor de plugins vim-plug, lo instalamos con el siguiente comando:
-Fuente:
-[Instalar vim-plug (curl)](https://github.com/junegunn/vim-plug#installation)
+Para añadir plugin: yo voy a usar el gestor de plugins vim-plug [Instalar vim-plug (curl)](https://github.com/junegunn/vim-plug#installation), lo instalamos con el siguiente comando.
 
 ```zsh
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
