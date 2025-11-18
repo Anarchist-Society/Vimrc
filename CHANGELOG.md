@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [1.2.0] - 2025-11-18
+### Added
+- Custom keymaps:
+  - Insert mode: `jj` → Esc
+  - Normal mode: `<SPACE>` → command mode, `o`/`O` → new line
+  - Window navigation: `<C-h/j/k/l>` → move between windows
+  - Window resizing: `<C-UP/DOWN/LEFT/RIGHT>`
+  - Plugin shortcuts: `<C-n>` → toggle NERDTree
+
 ## [1.1.0] - 2025-11-18
 ### Added
 - Plugins:
