@@ -79,3 +79,12 @@ nnoremap <C-RIGHT> <C-w><
 
 " Plugin shortcuts
 nnoremap <C-n> :ERDTreeToggle<CR>
+
+" VIMSCRIPT
+if version >= 703
+    set undodir=~/.vim/backup
+    set undofile
+    set undoreload=10000
+endif
+
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
