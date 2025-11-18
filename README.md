@@ -3,13 +3,12 @@
 Configuración minimalista pero potente de **Vim clásico**.
 
 Esta primera versión está basada en la guía de configuración de vimrc de  **freeCodeCamp**:
-
 [vimrc configuration guide - freeCodeCamp](https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/)
 
 ## Requisitos previos
 - Vim >= 8.2 (recomendado)
 - 'curl' instalado
-- Node.js >= 16 (necesario para coc.nvim) (por ahora hasta la 24 porque me da errores con la versión 25)
+- Node.js >= 16 (por ahora hasta la 24 porque me da errores con la versión 25)
 - Git
 
 ## Estructura de directorios que vamos a crear
@@ -35,7 +34,7 @@ touch ~/.vimrc
 ## Plugins para vim
 Para añadir plugin: yo voy a usar el gestor de plugins vim-plug, lo instalamos con el siguiente comando:
 Fuente:
-[Instalar vim-plug (culr)] (https://github.com/junegunn/vim-plug#installation)
+[Instalar vim-plug (curl)](https://github.com/junegunn/vim-plug#installation)
 
 ```zsh
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
