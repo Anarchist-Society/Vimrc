@@ -46,3 +46,12 @@ set history=1000
 " COMPLETATION
 set wildmode=list:longest,full
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*.o
+
+" PLUGINS
+call plug#begin('~/.vim/plugged')
+Plug 'dense-analysis/ale'
+Plug 'preservim/nerdtree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mhinz/vim-startify'
+Plug 'wolandark/vim-live-server'
+call plug#end()
