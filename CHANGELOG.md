@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [1.3.0] - 2025-11-18
+### Added
+- Persistent undo:
+  - `undodir=~/.vim/backup`
+  - `undofile`
+  - `undoreload=10000`
+- FileType-specific settings:
+  - HTML files: `shiftwidth=2`, `tabstop=2`, `expandtab`
+
 ## [1.2.0] - 2025-11-18
 ### Added
 - Custom keymaps:
