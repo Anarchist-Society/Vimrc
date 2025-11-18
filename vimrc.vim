@@ -45,7 +45,7 @@ set history=1000
 
 " COMPLETATION
 set wildmode=list:longest,full
-set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*.o
+set wildignore=*.o
 
 " PLUGINS
 call plug#begin('~/.vim/plugged')
@@ -55,3 +55,27 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mhinz/vim-startify'
 Plug 'wolandark/vim-live-server'
 call plug#end()
+
+" MAPPINGS
+" Insert mode
+inoremap jj <ESC>
+
+" Normal mode
+nnoremap <SPACE> :
+nnoremap o o<ESC>
+nnoremap O O<ESC>
+
+" Window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-UP> <C-w>+
+
+" Window resizing
+nnoremap <C-DOWN> <C-w>-
+nnoremap <C-LEFT> <C-w>>
+nnoremap <C-RIGHT> <C-w><
+
+" Plugin shortcuts
+nnoremap <C-n> :ERDTreeToggle<CR>
