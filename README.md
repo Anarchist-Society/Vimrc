@@ -12,5 +12,35 @@ Esta primera versión está basada en la guía de configuración de vimrc de  **
 - Node.js >= 16 (necesario para coc.nvim) (por ahora hasta la 24 porque me da errores con la versión 25)
 - Git
 
+## Estructura de directorios que vamos a crear
+```
+.vim/
+ ├── autoload/
+ ├── backup/
+ ├── colors/
+ └── plugged/
+```
+
+Creamos la estructura:
+
+```zsh
+mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
+```
+
+Creamos el fichero vimrc
+```zsh
+touch ~/.vimrc
+```
+
+## Plugins para vim
+Para añadir plugin: yo voy a usar el gestor de plugins vim-plug, lo instalamos con el siguiente comando:
+Fuente:
+[Instalar vim-plug (culr)] (https://github.com/junegunn/vim-plug#installation)
+
+```zsh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
 ## Instalación
 Toda la guía paso a paso está en el fichero **[INSTALL.md](INSTALL.md)**.
