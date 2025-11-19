@@ -8,58 +8,69 @@
 "                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" BASIC SETTINGS
-" File
+" ==========================================================================
+" 1. GENERAL SETTINGS
+" ==========================================================================
 filetype on
 filetype plugin on
 filetype indent on
-set autoread
-
-" VISUAL
-" Apareance
 syntax on
-set background=dark
-set termguicolors
-set number
-set relativenumber
+set autoread
+set number relativenumber
 set scrolloff=10
 set linebreak
+set termguicolors
+set background=dark
 
-" TABULATION
+" Tabulation
 set shiftwidth=4
 set tabstop=4
 set expandtab
 
-" BACKUP
-set nowritebackup
-set noswapfile
-
 " SEARCH
-set incsearch
-set ignorecase
-set smartcase
-set showmatch
-set hlsearch
-set history=1000
+set incsearch hlsearch ignorecase smartcase showmatch
 
-" COMPLETATION
+" Backup & undo
+set nowritebackup noswapfile history=1000
+if version >= 703
+    set undodir=~/.vim/backup
+    set undofile
+    set undoreload=10000
+endif
+
+" Wildmenu
 set wildmode=list:longest,full
 set wildignore=*.o
 
-" PLUGINS
+" ==========================================================================
+" 2. PLUGINS (vim-plug)
+" ==========================================================================
 call plug#begin('~/.vim/plugged')
+" Tools
 Plug 'dense-analysis/ale'
-Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
 Plug 'mhinz/vim-startify'
+
+" Productivity
 Plug 'wolandark/vim-live-server'
 
+" Apareance
 Plug 'gerardbm/vim-atomic'
 call plug#end()
 
+" ==========================================================================
+" 3. PLUGIN CONFIGURATION
+" ==========================================================================
+" vim-atomic
 colorscheme atomic
 
-" MAPPINGS
+" NERDTree
+nnoremap <C-n> :NERDTreeToggle<CR>
+
+" ==========================================================================
+" 4. MAPPINGS
+" ==========================================================================
 " Insert mode
 inoremap jj <ESC>
 
@@ -80,14 +91,7 @@ nnoremap <C-DOWN> <C-w>-
 nnoremap <C-LEFT> <C-w>>
 nnoremap <C-RIGHT> <C-w><
 
-" Plugin shortcuts
-nnoremap <C-n> :NERDTreeToggle<CR>
-
-" VIMSCRIPT
-if version >= 703
-    set undodir=~/.vim/backup
-    set undofile
-    set undoreload=10000
-endif
-
+" ============================================================================
+" 5. VIMSCRIPT
+" ============================================================================
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
