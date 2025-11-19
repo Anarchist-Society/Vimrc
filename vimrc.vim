@@ -6,8 +6,7 @@
 "               ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║     
 "                ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
 "                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
-"               
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " BASIC SETTINGS
 " File
@@ -54,7 +53,11 @@ Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mhinz/vim-startify'
 Plug 'wolandark/vim-live-server'
+
+Plug 'gerardbm/vim-atomic'
 call plug#end()
+
+colorscheme atomic
 
 " MAPPINGS
 " Insert mode
