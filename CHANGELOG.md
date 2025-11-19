@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [1.4.0] - 2025-11-19
+### Added
+- New plugin: 'gerardbm/vim-atomic'
+- Set 'colorsheme atomic' as default theme (loads correctly after plugins)
+
 ## [1.3.1] - 2025-11-18
 ### Fixed
 - Corrected NERDTree toggle keymap: changed `:ERDTreeToggle` → `:NERDTreeToggle`
