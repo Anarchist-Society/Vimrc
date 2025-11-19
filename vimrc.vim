@@ -64,6 +64,7 @@ call plug#end()
 " ==========================================================================
 " vim-atomic
 colorscheme atomic
+AtomicOceanMC
 
 " NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
