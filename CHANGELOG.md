@@ -1,9 +1,17 @@
 # CHANGELOG
 
+## [1.5.0] - 2025-11-19
+### Changed
+- Complete refactor and reorganization of `.vimrc`
+- Divided into 5 clearly commented sections for better readability and maintenance
+- Grouped related settings and improved visual structure
+- Moved plugin-specific mappings (NERDTree) to dedicated section
+- Minor syntax optimizations (combined `set` commands where possible)
+
 ## [1.4.0] - 2025-11-19
 ### Added
 - New plugin: 'gerardbm/vim-atomic'
-- Set 'colorsheme atomic' as default theme (loads correctly after plugins)
+- Set 'colorscheme atomic' as default theme (loads correctly after plugins)
 
 ## [1.3.1] - 2025-11-18
 ### Fixed
