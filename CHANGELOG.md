@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.6.0] - 2025-11-20
+- NERDTree now opens on the **right** side (`let g:NERDTreeWinPos = "right"`)
+### Changed
+- Switch default colorscheme to **CosmicLunarC5**
+- Remove line numbers and relative numbers for a more minimal look
+- Remove `wolandark/vim-live-server` (unnecessary browser-sync dependency)
+
 ## [1.5.0] - 2025-11-19
 ### Changed
 - Complete refactor and reorganization of `.vimrc`
