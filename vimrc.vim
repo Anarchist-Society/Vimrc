@@ -16,7 +16,7 @@ filetype plugin on
 filetype indent on
 syntax on
 set autoread
-set number relativenumber
+" set number relativenumber
 set scrolloff=10
 set linebreak
 set termguicolors
@@ -53,21 +53,25 @@ Plug 'preservim/nerdtree'
 Plug 'mhinz/vim-startify'
 
 " Productivity
-Plug 'wolandark/vim-live-server'
+Plug 'https://github.com/wolandark/vim-live-server.git', { 'do': 'sudo npm install -g live-server' }
 
 " Apareance
 Plug 'gerardbm/vim-atomic'
+Plug 'gerardbm/vim-cosmic'
 call plug#end()
 
 " ==========================================================================
 " 3. PLUGIN CONFIGURATION
 " ==========================================================================
 " vim-atomic
-colorscheme atomic
-AtomicOceanMC
+
+" vim-cosmic
+colorscheme cosmic
+CosmicLunarC5
 
 " NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = 'right'
 
 " ==========================================================================
 " 4. MAPPINGS
