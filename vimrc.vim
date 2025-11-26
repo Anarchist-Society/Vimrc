@@ -103,3 +103,12 @@ nnoremap <C-RIGHT> <C-w><
 " 5. VIMSCRIPT
 " ============================================================================
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
+
+" ============================================================================
+" 6. STATUS LINE
+" ============================================================================
+set statusline=
+set statusline+=\ %F\ %M\ %Y\ %R
+set statusline+=%=
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+set laststatus=2
