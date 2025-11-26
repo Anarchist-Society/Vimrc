@@ -73,6 +73,9 @@ CosmicLunarC5
 nnoremap <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = 'right'
 
+" vim-startify
+let g:startify_change_to_dir = 0
+
 " ==========================================================================
 " 4. MAPPINGS
 " ==========================================================================
