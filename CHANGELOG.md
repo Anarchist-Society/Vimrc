@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## [1.7.0] - 2025-11-26
+- Disable vim-startify automatic directory change (`let g:startify_change_to_dir = 0`)
+
 ## [1.6.0] - 2025-11-20
 - NERDTree now opens on the **right** side (`let g:NERDTreeWinPos = "right"`)
 ### Changed
