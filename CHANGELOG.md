@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [1.8.0] - 2025-11-26
+- Add custom statusline  
+  Replaced the default statusline with a clean, informative one that shows:  
+  • Full file path (%F)  
+  • Modified/Readonly flags (%M %R)  
+  • Filetype (%Y)  
+  • ASCII value (%b) and hex value (0x%B) of current character  
+  • Current row, column and percentage (%l,%c %p%%)
+
 ## [1.7.0] - 2025-11-26
 - Disable vim-startify automatic directory change (`let g:startify_change_to_dir = 0`)
 
