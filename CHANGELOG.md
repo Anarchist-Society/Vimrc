@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.9.0] - 2025-11-27
+### Added
+- `tiagofumo/vim-nerdtree-syntax-highlight` → syntax highlighting in NERDTree
+- `ryanoasis/vim-devicons` → file icons in NERDTree and statusline
+- Leader key set to comma: `let mapleader = ","`
+- Quick save shortcut: `,w` → `:w<ENTER>`
+
 ## [1.8.0] - 2025-11-26
 - Add custom statusline  
   Replaced the default statusline with a clean, informative one that shows:  
