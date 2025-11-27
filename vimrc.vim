@@ -58,6 +58,8 @@ Plug 'https://github.com/wolandark/vim-live-server.git', { 'do': 'sudo npm insta
 " Apareance
 Plug 'gerardbm/vim-atomic'
 Plug 'gerardbm/vim-cosmic'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " ==========================================================================
@@ -79,6 +81,10 @@ let g:startify_change_to_dir = 0
 " ==========================================================================
 " 4. MAPPINGS
 " ==========================================================================
+" Leader key
+let mapleader = ","
+nnoremap <LEADER>w :w<ENTER>
+
 " Insert mode
 inoremap jj <ESC>
 
