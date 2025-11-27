@@ -3,7 +3,7 @@
 ## [1.9.0] - 2025-11-27
 ### Added
 - `tiagofumo/vim-nerdtree-syntax-highlight` → syntax highlighting in NERDTree
-- `ryanoasis/vim-devicons` → file icons in NERDTree and statusline
+- `ryanoasis/vim-devicons` → file icons in NERDTree
 - Leader key set to comma: `let mapleader = ","`
 - Quick save shortcut: `,w` → `:w<ENTER>`
 
