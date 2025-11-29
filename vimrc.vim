@@ -51,6 +51,7 @@ Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'mhinz/vim-startify'
+Plug 'airblade/vim-gitgutter'
 
 " Productivity
 Plug 'https://github.com/wolandark/vim-live-server.git', { 'do': 'sudo npm install -g live-server' }
@@ -72,11 +73,16 @@ colorscheme cosmic
 CosmicLunarC5
 
 " NERDTree
-nnoremap <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = 'right'
 
 " vim-startify
 let g:startify_change_to_dir = 0
+autocmd VimEnter *
+            \   if !argc()
+            \ |   Startify
+            \ |   NERDTree
+            \ |   wincmd w
+            \ | endif
 
 " ==========================================================================
 " 4. MAPPINGS
@@ -84,6 +90,8 @@ let g:startify_change_to_dir = 0
 " Leader key
 let mapleader = ","
 nnoremap <LEADER>w :w<ENTER>
+nnoremap <LEADER>n :NERDTreeToggle<CR>
+nnoremap <LEADER>f :NERDTreeFind<CR>
 
 " Insert mode
 inoremap jj <ESC>
