@@ -15,6 +15,7 @@
 - Quick save shortcut: `,w` → `:w<ENTER>`
 
 ## [1.8.0] - 2025-11-26
+### Added
 - Add custom statusline  
 - Replaced the default statusline with a clean, informative one that shows:  
 - Full file path (%F)  
@@ -24,9 +25,11 @@
 - Current row, column and percentage (%l,%c %p%%)
 
 ## [1.7.0] - 2025-11-26
+### Added
 - Disable vim-startify automatic directory change (`let g:startify_change_to_dir = 0`)
 
 ## [1.6.0] - 2025-11-20
+### Added
 - NERDTree now opens on the **right** side (`let g:NERDTreeWinPos = "right"`)
 ### Changed
 - Switch default colorscheme to **CosmicLunarC5**
