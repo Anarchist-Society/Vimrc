@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [2.0.1] - 2025-11-30
+### Added
+- Auto-close Vim when only NERDTree remains in the only tab
+- Auto-close current tab when NERDTree is the only window left in it
+- Show file line counts in NERDTree (`NERDTreeFileLines = 1`)
+
 ## [2.0.0] - 2025-11-29
 ### Added
 - Automatic vim-startify + NERDTree on startup when opening Vim without arguments
