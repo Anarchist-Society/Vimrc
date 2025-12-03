@@ -16,7 +16,7 @@ filetype plugin on
 filetype indent on
 syntax on
 set autoread
-" set number relativenumber
+set number relativenumber
 set scrolloff=10
 set linebreak
 set termguicolors
@@ -52,6 +52,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'airblade/vim-gitgutter'
+" Plug 'PhilRunninger/nerdtree-buffer-ops' (testing)
 
 " Productivity
 Plug 'https://github.com/wolandark/vim-live-server.git', { 'do': 'sudo npm install -g live-server' }
@@ -82,7 +83,7 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
 
 " Show lines of files
-let g:NERDTreeFileLines = 1
+" let g:NERDTreeFileLines = 1 (this break vim-nerdtree-syntax-highlight)
 
 " vim-startify
 let g:startify_change_to_dir = 0
@@ -92,6 +93,8 @@ autocmd VimEnter *
             \ |   NERDTree
             \ |   wincmd w
             \ | endif
+
+let g:startify_bookmarks = [{'c': '~/.vimrc'}]
 
 " ==========================================================================
 " 4. MAPPINGS
