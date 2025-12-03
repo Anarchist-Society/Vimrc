@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [2.0.2] - 2025-12-03
+### Added
+- Enable hybrid line numbers ('number' + 'relativenumber')
+- Add `~/.vimrc` bookmark in vim-startify
+- Disable NERDTree line count to prevent breaking `tiagofumo/vim-nerdtree-syntax-highlight`
+
 ## [2.0.1] - 2025-11-30
 ### Added
 - Auto-close Vim when only NERDTree remains in the only tab
