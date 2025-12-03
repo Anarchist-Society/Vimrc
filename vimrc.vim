@@ -8,7 +8,7 @@
 "                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" ==========================================================================
+" ========================================================================== 
 " 1. GENERAL SETTINGS
 " ==========================================================================
 filetype on
@@ -53,6 +53,7 @@ Plug 'preservim/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'airblade/vim-gitgutter'
 " Plug 'PhilRunninger/nerdtree-buffer-ops' (testing)
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Productivity
 Plug 'https://github.com/wolandark/vim-live-server.git', { 'do': 'sudo npm install -g live-server' }
@@ -74,6 +75,7 @@ colorscheme cosmic
 CosmicLunarC5
 
 " NERDTree
+" Open NERDTree in right
 let g:NERDTreeWinPos = 'right'
 
 " Exit Vim if NERDTree is the only window remaining in the only tab
@@ -85,6 +87,9 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 " Show lines of files
 " let g:NERDTreeFileLines = 1 (this break vim-nerdtree-syntax-highlight)
 
+" Disable Cursorline in NERDTree
+let g:NERDTreeHighlightCursorline = 0
+
 " vim-startify
 let g:startify_change_to_dir = 0
 autocmd VimEnter *
@@ -95,6 +100,16 @@ autocmd VimEnter *
             \ | endif
 
 let g:startify_bookmarks = [{'c': '~/.vimrc'}]
+
+" vim-nerdtree-syntax-highlight
+" Disable default colors for folder and file icons
+let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
+let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
+
+" Colors applied in names of files
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
 
 " ==========================================================================
 " 4. MAPPINGS
