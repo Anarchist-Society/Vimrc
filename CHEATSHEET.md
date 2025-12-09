@@ -1,23 +1,32 @@
 # CHEATSHEET
 
 ## Global
-| Commands          | Action                                    |
-|-------------------|-------------------------------------------|
-| `:h[elp] keyword` | Open help for keyword                     |
-| `:sav[eas] file`  | Save file as                              |
-| `:clo[se]`        | Close current pane                        |
-| `:ter[minal]`     | Open a terminal window                    |
-| `K`               | Open a man page for word under the cursor |
+| Commands                | Action                                  |
+|-------------------------|-----------------------------------------|
+| `:h[elp] palabra_clave` | Abrir ayuda para palabra clave          |
+| `:sav[eas] fichero`     | Guardar fichero como                    |
+| `:clo[se]`              | Cerrar fichero actual                   |
+| `:ter[minal]`           | Abrir una ventana de terminal           |
+| `K`                     | Abrir el man del comando bajo el cursor |
 
-## Cursor movement
-| Key   | Action                             |
-|-------|------------------------------------|
-| `h`   | Move cursor left                   |
-| `j`   | Move cursor down                   |
-| `k`   | Move cursor up                     |
-| `l`   | Move cursor right                  |
-| `gj`  | Move cursor down (multi-line text) |
-| `gk`  | Move cursor up (multi-line text)   |
-| `H`   | Move to top screen                 |
-| `M`   | Move to middle of screen           |
-| `L`   | Move to bottom of screen           |
+## Mover el cursor
+| Key   | Action                                                                     |
+|-------|----------------------------------------------------------------------------|
+| `h`   | Mover el cursor hacia la izquierda                                         |
+| `j`   | Mover el cursor hacia abajo                                                |
+| `k`   | Mover el cursor hacia arriba                                               |
+| `l`   | Mover el cursor hacia la derecha                                           |
+| `gj`  | Mover el cursor hacia abajo (texto multilínea)                             |
+| `gk`  | Mover el cursor hacia arriba (texto multilínea)                            |
+| `H`   | Mover el cursor hacia la parte superior de la pantalla                     |
+| `M`   | Mover el cursor hacia el centro de la pantalla                             |
+| `L`   | Mover el cursor hacia la parte inferior de la pantalla                     |
+| `w`   | Saltar hasta el inicio de la siguiente palabra                             |
+| `W`   | Saltar hasta el inicio de la siguiente palabra (incluso con puntuación)    |
+| `e`   | Saltar hasta el final de la siguiente palabra                              |
+| `E`   | Saltar hasta el final de la siguiente palabra (incluso con puntuación)     |
+| `b`   | Saltar hacia atrás hasta el inicio de una palabra                          |
+| `B`   | Saltar hacia atrás hasta el inicio de una palabra (incluso con puntuación) |
+| `ge`  | Saltar hacia atrás hasta el final de una palabra                           |
+| `gE`  | Saltar hacia atrás hasta el final de una palabra (incluso con puntuación)  |
+| `gE`  | Saltar hacia atrás hasta el final de una palabra (incluso con puntuación)  |
