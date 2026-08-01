@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## [2.1.0] - 2026-08-01
+### Added
+- Dvorak keyboard support: added commented mappings (r/t/n/s → hjkl) for future activation
+### Changed
+- Enabled absolute line numbers (`set number`)
+- Switched default colorscheme to `tokyonight`
+- indentLine now only enabled for HTML files (`g:indentLine_fileType = ['html']`)
+### Disabled
+- coc-nvim plugin (commented out)
+- `inoremap jj <ESC>` mapping (commented out)
+- `emmet-vim` leader key config (commented out)
+
 ## [2.0.6] - 2026-02-15
 ### Changed
 - Improved internal documentation in vimrc.vim: added clear Spanish comments explaining
