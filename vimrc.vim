@@ -19,7 +19,7 @@ filetype indent on
 
 " Interfaz
 syntax on " Activar resalto de sintaxis
-" set number " Mostrar número de líneas absoluto
+set number " Mostrar número de líneas absoluto
 " set relativenumber " Mostrar número de líneas relativo
 set scrolloff=10  " Mantener 10 líneas de margen vertical al desplazarse
 set linebreak " Evita cortar palabras al hacer wrap
@@ -73,7 +73,7 @@ call plug#begin('~/.vim/plugged')
 
 " Herramientas
 Plug 'dense-analysis/ale' " Linter en tiempo real
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletado + LSP
+" Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletado + LSP
 Plug 'preservim/nerdtree' " Explorador de ficheros
 Plug 'mhinz/vim-startify' " Pantalla de inicio
 Plug 'airblade/vim-gitgutter' " Muestra iconos de git en ficheros
@@ -178,6 +178,13 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 " ==========================================================================
 " 4. MAPPINGS
 " ==========================================================================
+
+" Dvorak - Remapeo de navegación (hjkl → rtns)
+" nnoremap r h  " ← izquierda
+" nnoremap t j  " ↓ abajo
+" nnoremap n k  " ↑ arriba
+" nnoremap s l  " → derecha
+
 " Leader key
 let mapleader = ","
 nnoremap <LEADER>w :w<ENTER>
@@ -189,7 +196,7 @@ nnoremap <LEADER>t :terminal<CR>
 " nnoremap <LEADER>tr :terminal ./mvnw spring-boot:run<CR>
 
 " Insert mode
-inoremap jj <ESC>
+" inoremap jj <ESC>
 
 " Normal mode
 nnoremap <SPACE> :
