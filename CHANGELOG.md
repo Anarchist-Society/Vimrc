@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [2.2.0] - 2026-09-08
+### Changed
+- Enabled coc-nvim plugin for autocompletion + LSP support
+- Disabled indentLine plugin
+- Disabled filetype-specific autocmd indentation for html, css, javascript, json, sql, python
+- Disabled BufWritePre prettier auto-formatting
+- Disabled html_indent_style1 setting
+- Disabled python indent configuration
+- Disabled indentLine_fileType restriction
+
 ## [2.1.0] - 2026-08-01
 ### Added
 - Dvorak keyboard support: added commented mappings (r/t/n/s → hjkl) for future activation

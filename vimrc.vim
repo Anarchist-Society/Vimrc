@@ -73,12 +73,12 @@ call plug#begin('~/.vim/plugged')
 
 " Herramientas
 Plug 'dense-analysis/ale' " Linter en tiempo real
-" Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletado + LSP
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletado + LSP
 Plug 'preservim/nerdtree' " Explorador de ficheros
 Plug 'mhinz/vim-startify' " Pantalla de inicio
 Plug 'airblade/vim-gitgutter' " Muestra iconos de git en ficheros
 Plug 'Xuyuanp/nerdtree-git-plugin' " Muestra iconos de git en NERDTree
-Plug 'Yggdroot/indentLine' " Indent lines
+" Plug 'Yggdroot/indentLine' " Indent lines
 
 " Web development
 Plug 'https://github.com/wolandark/vim-live-server.git' " Habilitar Live-Server
@@ -218,25 +218,25 @@ nnoremap <C-RIGHT> <C-w><
 " ============================================================================
 " 5. VIMSCRIPT
 " ============================================================================
-autocmd FileType html,css,javascript,json setlocal shiftwidth=2 tabstop=2 expandtab " Para tabular con 2 espacios ficheros html, css, javascript, json
-autocmd FileType sql setlocal shiftwidth=2 tabstop=2 expandtab
+" autocmd FileType html,css,javascript,json setlocal shiftwidth=2 tabstop=2 expandtab " Para tabular con 2 espacios ficheros html, css, javascript, json
+" autocmd FileType sql setlocal shiftwidth=2 tabstop=2 expandtab
 " autocmd BufWritePre *.html,*.css,*.js,*,json :CocCommand prettier.forceFormatDocument
-autocmd BufWritePre *.html,*.css,*.js,*.json silent! :CocCommand prettier.formatFile
+" autocmd BufWritePre *.html,*.css,*.js,*.json silent! :CocCommand prettier.formatFile
 
 " Solución para indentar html + css
-let g:html_indent_style1 = "inc"
+" let g:html_indent_style1 = "inc"
 
 " Solución para indentar python
 " Desactiva smartindent para Python (a veces interfiere)
-autocmd FileType python setlocal nosmartindent
+" autocmd FileType python setlocal nosmartindent
 
 " Configuración extra del indentador de Python (Vim 8.2+ / Neovim)
-let g:python_indent = {}
-let g:python_indent.disable_parentheses_indenting = 1
-let g:python_indent.closed_paren_align_last_line = 0
+" let g:python_indent = {}
+" let g:python_indent.disable_parentheses_indenting = 1
+" let g:python_indent.closed_paren_align_last_line = 0
 
 " let g:indentLine_enabled = 0 " Desactivado por defecto
-let g:indentLine_fileType = ['html'] " Solo activo en HTML
+" let g:indentLine_fileType = ['html'] " Solo activo en HTML
 
 " ============================================================================
 " 6. STATUS LINE
